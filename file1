@@ -1,0 +1,13 @@
+#ユークリッドの互除法
+
+x,y = map(int, input().split())
+
+if x < y:
+    y,x = x,y    
+    
+while y > 0:
+    r = x % y
+    x = y
+    y = r
+
+print(x)
